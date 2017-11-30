@@ -1,8 +1,10 @@
 # Veeam RESTful API & Amazon Alexa
 
 ### Disclaimer
-This project is a private one and not supported by Veeam
-I don't have any programming skills. Everthing was put together using copy & paste and trial and error.
+* This project is a private one and not supported by Veeam
+* I don't have any programming skills. Everthing was put together using copy & paste and trial and error.
+* This is just a demo, but it can easily be extended with more features.
+
 ### Purpose
 I like Alexa and since I am working at Veeam I thought why not use our RESTful API to use with Alexa :)
 ### Demo
