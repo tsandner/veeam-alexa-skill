@@ -1,0 +1,138 @@
+{
+  "languageModel": {
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "Overview",
+        "samples": [
+          "Overview",
+          "Give me an overview"
+        ],
+        "slots": []
+      },
+      {
+        "name": "JobOverview",
+        "samples": [
+          "job overview",
+          "give me an job overview",
+          "give me an overview on my jobs",
+          "how many jobs do I have",
+          "how many jobs I have",
+          "how many jobs there are"
+        ],
+        "slots": []
+      },
+      {
+        "name": "Jobstatus",
+        "samples": [
+          "Jobstatus",
+          "Did my jobs run",
+          "Did my jobs run yesterday",
+          "Did my jobs complete successfully",
+          "did my jobs complete yesterday",
+          "did my backup jobs complete yesterday",
+          "Did my backup jobs run",
+          "Did my backup jobs run yesterday",
+          "Did my backup jobs complete successfully",
+          "did my backup jobs complete yesterday",
+          "did my backup run last night",
+          "did my jobs complete",
+          "were my backup jobs successful",
+          "did my backup jobs run",
+          "backup job status"
+        ],
+        "slots": []
+      },
+      {
+        "name": "Backupfilesize",
+        "samples": [
+          "backup file size",
+          "How much data was written to disk last night",
+          "how much data was backed up last night",
+          "how much data was backed up",
+          "how large was last nights backup"
+        ],
+        "slots": []
+      },
+      {
+        "name": "RepositoryFreeSpace",
+        "samples": [
+          "How much free space is left",
+          "How much free space do I have",
+          "how much free space",
+          "how much space is left",
+          "how much space I have left",
+          "free space",
+          "tell me how much space is left",
+          "how much space do I have left"
+        ],
+        "slots": []
+      },
+      {
+        "name": "Repositoryinfo",
+        "samples": [
+          "Repositories",
+          "Repository",
+          "Repository overview",
+          "give me a repository overview",
+          "give me an overview on my repositories",
+          "give me an overview about my repositories",
+          "Tell me about my repositories",
+          "tell me the free space",
+          "tell me how much free space is left",
+          "tell tell me some details about my repositories",
+          "how are my repositories doing"
+        ],
+        "slots": []
+      },
+      {
+        "name": "RunningJobs",
+        "samples": [
+          "running jobs",
+          "how many jobs are running",
+          "how many jobs are running right now",
+          "how many jobs are there are running right now"
+        ],
+        "slots": []
+      },
+      {
+        "name": "switzerland",
+        "samples": [
+          "Are you russian",
+          "are you swiss",
+          "are you american",
+          "Were is Veam based",
+          "is veam a russian company",
+          "is veam russian",
+          "were is veam's headquarter",
+          "were are veam's headquarters",
+          "were are you based",
+          "if its a russaian",
+          "if its a russian company",
+          "if it is a russaian",
+          "if it is a russian company"
+        ],
+        "slots": []
+      },
+      {
+        "name": "test",
+        "samples": [
+          "test"
+        ],
+        "slots": []
+      }
+    ],
+    "invocationName": "veam"
+  }
+}
