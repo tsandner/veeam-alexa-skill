@@ -7,6 +7,9 @@
 
 ### Purpose
 I like Alexa and since I am working at Veeam I thought why not use our RESTful API to use with Alexa :)
+
+This is only a demo how to consume the Veeam RESTful API with Amazon Alexa.
+
 ### Demo
 [Demo on Youtube](https://www.youtube.com)
 ### Overview
