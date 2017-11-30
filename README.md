@@ -20,7 +20,7 @@ I like Alexa and since I am working at Veeam I thought why not use our RESTful A
     ngrok http 5000
     ```
 This will expose localhost:5000 to the public internet.
-3. [Download](https://www.python.org/downloads/) and install latest version of **Python 3.x** 
+3. [Download](https://www.python.org/downloads/) and install latest version of **Python 3.x**
 4. Use pip to install required python modules:
    ```
    pip install requests flask flask_ask unidecode
@@ -38,7 +38,7 @@ This will expose localhost:5000 to the public internet.
     ```
     python veeam-alexa.py
     ```
- 
+
 ### AWS Alexa Setup
 
 1. Goto https://developer.amazon.com/edw/home.html and sign in / create a new developer account
@@ -49,18 +49,18 @@ This will expose localhost:5000 to the public internet.
    * Language: English (U.S.)
    * Name: choose a name
    * Invocation Name: veam (write it this way if you want to call the skill using "Veeam"; you can select any other invocation name of course)
-   * Hit **Save** and then **Next*
+   * Hit **Save** and then **Next**
 6. Interaction model: Launch **Skill Builder**
 	* Intent Schema - open the **Code Editor** on the left
 	* Use veeam-intent-schema-ENGL.json
-	* Save & Build Model
-7. Go to **Configuration** (top right menue button) 
+	* **Save & Build Model**
+7. Go to **Configuration** (top right menue button)
    * Service Endpoint Type: HTTPS
    * Default: use the ngrok https address (step 2 in Local Setup; example: https://19a1e1ff.ngrok.io)
    * Provide geographical region endpoints?: No
    * Account Linking: No
    * Permissions: leave as is (default)
-   * Hit **Next*
+   * Hit **Next**
 8. SSL Certificate
 	* Select second option: " My development endpoint is a sub-domain of a domain that has a wildcard certificate from a certificate authority"
 	* Hit **Next**
@@ -84,8 +84,8 @@ This will expose localhost:5000 to the public internet.
 
 
 ### Credits
-* [John Wheeler](https://developer.amazon.com/de/alexa/champions/john-wheeler) for this awesome tutorial & python module: https://alexatutorial.com 
-* [Timothy Dewin](https://twitter.com/tdewin) for his demo on how to consume Veeam's Restful API https://github.com/tdewin/veeamrestpython 
+* [John Wheeler](https://developer.amazon.com/de/alexa/champions/john-wheeler) for this awesome tutorial & python module: https://alexatutorial.com
+* [Timothy Dewin](https://twitter.com/tdewin) for his demo on how to consume Veeam's Restful API https://github.com/tdewin/veeamrestpython
 * [Alan Shreve](https://twitter.com/inconshreveable) for https://ngrok.com/
 * https://github.com/jbt/markdown-editor which helped me creating this readme.md :)
 
