@@ -11,7 +11,7 @@ I like Alexa and since I am working at Veeam I thought why not use our RESTful A
 This is only a demo how to consume the Veeam RESTful API with Amazon Alexa.
 
 ### Demo
-[Demo on Youtube](https://youtu.be/GIferJGMgDA)
+[Demo on Youtube](https://www.youtube.com)
 ### Overview
 ![2017-11-29 23_42_25-powerpoint-bildschirmprasentation - grafiken pptx](https://user-images.githubusercontent.com/34011056/33403030-05720f88-d55f-11e7-9f3b-d4d0163d0f69.png)
 

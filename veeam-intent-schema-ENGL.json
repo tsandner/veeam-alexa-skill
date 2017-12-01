@@ -107,25 +107,6 @@
         "slots": []
       },
       {
-        "name": "switzerland",
-        "samples": [
-          "Are you russian",
-          "are you swiss",
-          "are you american",
-          "Were is Veam based",
-          "is veam a russian company",
-          "is veam russian",
-          "were is veam's headquarter",
-          "were are veam's headquarters",
-          "were are you based",
-          "if its a russaian",
-          "if its a russian company",
-          "if it is a russaian",
-          "if it is a russian company"
-        ],
-        "slots": []
-      },
-      {
         "name": "test",
         "samples": [
           "test"

@@ -36,7 +36,7 @@ def auth_veeamapi():
     #better in production to have verification and no self signed certificates
     if not verifyssl:
         requests.packages.urllib3.disable_warnings(requests.packages.urllib3.exceptions.InsecureRequestWarning)
-    
+
     hrefapi = "https://{server}:{port}/api/".format(server=server,port=port)
     # Access the API
     response = requests.get(hrefapi,verify=verifyssl)
@@ -48,7 +48,7 @@ def auth_veeamapi():
         #we need to find the api link so we can authenticate
         #hreflogonlink should be under EnterpriseManager(root)>Links>Link with attibute type eq LogonSession
         #for more info check the login example https://helpcenter.veeam.com/docs/backup/rest/logging_on.html?ver=95
-        
+
         xmlnamespace = "http://www.veeam.com/ent/v1.0"
         rawxml = response.text
         root = elementtree.fromstring(rawxml)
@@ -58,7 +58,7 @@ def auth_veeamapi():
             for link in links.iter("{{{ns}}}{tag}".format(ns=xmlnamespace,tag="Link")):
                 if "Href" in link.attrib and "Type" in link.attrib and link.attrib["Type"] == "LogonSession":
                     hreflogonlink = link.attrib["Href"]
-                   
+
         if hreflogonlink != None:
             # Login Link found
             # perform login:
@@ -92,10 +92,10 @@ def logout_veeamapi(hreflogout,headers,verifyssl):
             if response.status_code == 204:
                 print("Succesfully logged out")
             else:
-                print("Could not logout ({0})".format(response.status_code))      
+                print("Could not logout ({0})".format(response.status_code))
     else:
         print("Could not find logout link")
-        
+
 def bytes_2_human_readable(number_of_bytes):
     if number_of_bytes < 0:
         raise ValueError("!!! numberOfBytes can't be smaller than 0 !!!")
@@ -140,7 +140,7 @@ def overview():
     successfulvmlasteststates = 0
     warningvmlasteststates = 0
     failedvmlasteststates = 0
-    
+
     if resp.status_code < 400:
         rawxml = resp.text
         dom = elementtree.fromstring(rawxml)
@@ -224,14 +224,14 @@ def backupfiles():
     dt = datetime.datetime.utcnow() - datetime.timedelta(hours=24)
     utcdatetime=dt.strftime('%Y-%m-%dT%H:%M:%S.%f')[:-3]
     onedayago=utcdatetime + "Z"
-    
+
     overviewlink = apiurl+'query?type=BackupFile&format=Entities&sortDesc=CreationTimeUTC&pageSize=999&page=1&filter=creationtimeutc>"'+onedayago+'"'
     if troubleshooting: print("API url: {}".format(overviewlink))
     resp = requests.get(overviewlink,headers=headers,verify=verifyssl)
     filecount = 0
     backupsize = 0
     datasize = 0
-    
+
     if resp.status_code < 400:
         rawxml = resp.text
         dom = elementtree.fromstring(rawxml)
@@ -249,11 +249,11 @@ def backupfiles():
                     datasize = datasize + int(y.text)
 
     if troubleshooting: print("\n\n")
-    if troubleshooting: print("Sourcedata: {}".format(bytes_2_human_readable(datasize)))                   
+    if troubleshooting: print("Sourcedata: {}".format(bytes_2_human_readable(datasize)))
     if troubleshooting: print("Backup files of the last 24h: {}".format(bytes_2_human_readable(backupsize)))
     if troubleshooting: print("Number of backup files: {}".format(filecount))
     print("{} Info: Function backupfiles just run".format(datetime.datetime.now().isoformat()))
-    
+
     return filecount,backupsize,datasize
 
 def jobsessions():
@@ -262,7 +262,7 @@ def jobsessions():
     dt = datetime.datetime.utcnow() - datetime.timedelta(hours=24)
     utcdatetime=dt.strftime('%Y-%m-%dT%H:%M:%S.%f')[:-3]
     onedayago=utcdatetime + "Z"
-    
+
     #overviewlink = apiurl+'query?type=BackupJobSession&format=Entities&sortDesc=name&pageSize=999&page=1&filter=jobtype==backup;result=='+jobstatus+';endtime>"'+onedayago+'"'
     overviewlink = apiurl+'query?type=BackupJobSession&format=Entities&sortDesc=endtime&pageSize=999&page=1&filter=jobtype==backup;endtime>"'+onedayago+'"'
     if troubleshooting: print("API url: {}".format(overviewlink))
@@ -300,7 +300,7 @@ def jobsessions():
     if troubleshooting: print("Job Sessions with status Warning: {}".format(warningcount))
     if troubleshooting: print("Job Sessions with status Failed: {}".format(failedcount))
     print("{} Info: Function jobsessions just run".format(datetime.datetime.now().isoformat()))
-    
+
     return successcount,warningcount,failedcount
 
 def repositoryinfo():
@@ -489,11 +489,6 @@ def share_replication_jobs(numberreplicationjobs):
     return question("There are {} replication jobs: {}".format(len(replicationjoblist),", ".join(str(i) for i in replicationjoblist[0:count]))).simple_card(title=cardtitle, content=cardtext)
     #return question("These are the names of the first {} backup jobs: {}".format(numberbackupjobs,", ".join(str(i) for i in backupjoblist[0:count])))
 '''
-
-@ask.intent("switzerland")
-def headquarter_intent():
-        text = 'Veam is a company with russian roots. Our global headquarter is in Baar Switzerland, but to be honest it feels like an US-based company. You see - Veam is a truly global company.'
-        return statement(text).simple_card(title='Veeam\'s Headquarters', content="Russian roots, global headquarters in Baar Switzerland, feels like an US-based company.")
 
 @ask.intent("NoIntent")
 def no_intent():
