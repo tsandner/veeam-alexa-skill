@@ -75,7 +75,6 @@ This will expose localhost:5000 to the public internet.
 	* Give me an overview about my repositories
 	* How many jobs are running right now
 	* How large was last night's backup
-	* Is veam a russian
 
 ### Use the skill with Alexa
 
