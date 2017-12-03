@@ -103,6 +103,7 @@ This will expose localhost:5000 to the public internet.
 **Note: Your Echo device needs to be setup in English language (alexa.amazon.com settings of the echo device)**
 
 This is how it looks like in the Alexa app:
+
 ![screenshot_20171130-132001](https://user-images.githubusercontent.com/34011056/33530739-7cef98a0-d884-11e7-9161-e8e72466ff3f.png)
 
 ### Credits
