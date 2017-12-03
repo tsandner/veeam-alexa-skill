@@ -45,24 +45,27 @@ This will expose localhost:5000 to the public internet.
 ### AWS Alexa Setup
 
 1. Goto https://developer.amazon.com/edw/home.html and sign in / create a new developer account
-   ![2017-11-29 23_25_52-amazon alexa](https://user-images.githubusercontent.com/34011056/33402429-d47bb76e-d55c-11e7-9f3b-5e9412f2d68a.png)
-2. Select **Alexa Skills Kit** and hit **Get started**
    ![2017-11-26 02_37_06-amazon developer sign in](https://user-images.githubusercontent.com/34011056/33530521-3186f064-d881-11e7-8b35-8e8f1b395df5.png)
-3. Hit **Add a New Skill**
+   
+2. Select **Alexa Skills Kit** and hit **Get started**
    ![2017-11-26 02_37_56-amazon apps services developer portal](https://user-images.githubusercontent.com/34011056/33530557-781c6b44-d881-11e7-8cdb-bc9e4b5a826c.png)
+   
+3. Hit **Add a New Skill**
+    ![2017-11-26 02_38_14-amazon apps services developer portal](https://user-images.githubusercontent.com/34011056/33530527-3d0b8878-d881-11e7-8f6c-0ad464692003.png)
+    
 4. Skill information:
    Skill Type:  Custom Interaction Model
    * Language: English (U.S.)
    * Name: choose a name
    * Invocation Name: veam (write it this way if you want to call the skill using "Veeam"; you can select any other invocation name of course)
    * Hit **Save** and then **Next**
-   ![2017-11-26 02_38_14-amazon apps services developer portal](https://user-images.githubusercontent.com/34011056/33530527-3d0b8878-d881-11e7-8f6c-0ad464692003.png)
+  ![2017-11-26 02_39_05-amazon apps services developer portal](https://user-images.githubusercontent.com/34011056/33530528-406f303c-d881-11e7-9f7a-eb0cb61326c5.png)
 
 5. Interaction model: Launch **Skill Builder**
 	* Intent Schema - open the **Code Editor** on the left
 	* Use veeam-intent-schema-ENGL.json
 	* **Save & Build Model**
-	![2017-11-26 02_39_05-amazon apps services developer portal](https://user-images.githubusercontent.com/34011056/33530528-406f303c-d881-11e7-9f7a-eb0cb61326c5.png)
+	
 6. Go to **Configuration** (top right menue button)
    * Service Endpoint Type: HTTPS
    * Default: use the ngrok https address (step 2 in Local Setup; example: https://19a1e1ff.ngrok.io)
