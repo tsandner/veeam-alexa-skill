@@ -94,11 +94,12 @@ This will expose localhost:5000 to the public internet.
 
 ### Use the skill with Alexa
 
-1. Use your browser to navigate to alexa.amazon.de & login
+1. Use your browser to navigate to alexa.amazon.com & login
 2. Go to Skills (left menue)
 3. Go to "Your Skills" (top right)
 4. You should see your veeam-alexa-demo skill
 5. Try it out!
+**Note: Your Echo device needs to be setup in English language (alexa.amazon.com settings of the echo device)**
 
 
 ### Credits
