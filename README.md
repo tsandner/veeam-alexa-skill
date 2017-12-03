@@ -65,6 +65,7 @@ This will expose localhost:5000 to the public internet.
 	* Intent Schema - open the **Code Editor** on the left
 	* Use veeam-intent-schema-ENGL.json
 	* **Save & Build Model**
+	![2017-11-26 02_42_23-alexa skills kit _ skill builder beta2](https://user-images.githubusercontent.com/34011056/33530564-9f363b56-d881-11e7-8ff9-85df8286377f.png)
 	
 6. Go to **Configuration** (top right menue button)
    * Service Endpoint Type: HTTPS
@@ -73,9 +74,14 @@ This will expose localhost:5000 to the public internet.
    * Account Linking: No
    * Permissions: leave as is (default)
    * Hit **Next**
+   ![2017-11-26 02_42_23-alexa skills kit _ skill builder beta3](https://user-images.githubusercontent.com/34011056/33530567-b0507258-d881-11e7-99ec-93e145e4dfd8.png)
+   ![2017-11-26 02_44_49-amazon apps services developer portal](https://user-images.githubusercontent.com/34011056/33530568-b3be822c-d881-11e7-8d0e-1370e51de15d.png)
+   
 7. SSL Certificate
 	* Select second option: " My development endpoint is a sub-domain of a domain that has a wildcard certificate from a certificate authority"
 	* Hit **Next**
+	![2017-11-26 02_45_20-amazon apps services developer portal](https://user-images.githubusercontent.com/34011056/33530570-b5d8ef3e-d881-11e7-8bdf-c78743b59d97.png)
+	
 8. Test - Enter Utterances:
 	* Give me an overview
 	* How many jobs there are
@@ -84,6 +90,7 @@ This will expose localhost:5000 to the public internet.
 	* Give me an overview about my repositories
 	* How many jobs are running right now
 	* How large was last night's backup
+	![2017-11-26 02_57_05-amazon apps services developer portal](https://user-images.githubusercontent.com/34011056/33530573-bc278418-d881-11e7-8d41-04b017ba88e4.png)
 
 ### Use the skill with Alexa
 
