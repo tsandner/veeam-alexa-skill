@@ -45,6 +45,8 @@ This will expose localhost:5000 to the public internet.
 ### AWS Alexa Setup
 
 1. Goto https://developer.amazon.com/edw/home.html and sign in / create a new developer account
+   ![2017-11-29 23_42_25-powerpoint-bildschirmprasentation - grafiken pptx](https://user-images.githubusercontent.com/34011056/33403030-05720f88-d55f-11e7-9f3b-d4d0163d0f69.png)
+
 2. Select **Alexa Skills Kit** and hit **Get started**
 3. Hit **Add a New Skill**
 4. Skill information:
