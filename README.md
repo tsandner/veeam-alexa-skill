@@ -99,7 +99,11 @@ This will expose localhost:5000 to the public internet.
 3. Go to "Your Skills" (top right)
 4. You should see your veeam-alexa-demo skill
 5. Try it out!
+
 **Note: Your Echo device needs to be setup in English language (alexa.amazon.com settings of the echo device)**
+
+This is how it looks like in the Alexa app:
+![screenshot_20171130-132001](https://user-images.githubusercontent.com/34011056/33530617-5aad6508-d882-11e7-942d-43918582fa9b.png)
 
 
 ### Credits
